@@ -1,0 +1,14 @@
+{
+  "name": "private-delivery-image-relay",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types src/delivery_server.ts",
+    "test": "node --experimental-strip-types --test test/delivery_policy.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {"node": ">=22.18"},
+  "dependencies": {"zod": "^3.24.2"},
+  "devDependencies": {"@types/node": "^22.13.10", "typescript": "^5.8.2"}
+}

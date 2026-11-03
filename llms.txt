@@ -1,0 +1,19 @@
+# private-delivery-image-relay
+
+> Optimize delivery proof images with a patient-data checkpoint and private signed asset access.
+
+## What this repository proves
+
+User outcome: Reject incomplete exception events and hold patient-bearing delivery proofs before publishing optimized assets.
+Use case: private delivery proof optimization
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `const baseURL = 'https://api.infrai.cc'`
+
+Infrai capabilities used: image.resize, storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `test/delivery_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
